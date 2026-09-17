@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Strategy Optimizer for TradingView",
+  "version": "3.0.0",
+  "description": "Free, open-source optimizer for TradingView strategies: grid search, walk-forward validation, prop firm check and heatmaps.",
+  "author": "Roboquant",
+  "homepage_url": "https://github.com/Roboquant-AI/tradingview-optimizer",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "debugger",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://*.tradingview.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.tradingview.com/*"],
+      "js": ["src/content.ts"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["https://*.tradingview.com/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png"
+    },
+    "default_title": "Strategy Optimizer for TradingView",
+    "default_popup": "src/popup.html"
+  }
+}

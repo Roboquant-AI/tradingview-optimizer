@@ -1,0 +1,37 @@
+{
+  "name": "tradingview-optimizer",
+  "version": "3.0.0",
+  "description": "Strategy Optimizer for TradingView - free, open-source Chrome extension to optimize strategy parameters, run walk-forward analysis and export results",
+  "license": "MIT",
+  "author": "Roboquant",
+  "homepage": "https://github.com/Roboquant-AI/tradingview-optimizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roboquant-AI/tradingview-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Roboquant-AI/tradingview-optimizer/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build",
+    "build:prod": "vite build --mode production",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "bun test tests",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "plotly.js-dist-min": "^3.3.1",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.28",
+    "@types/chrome": "^0.0.287",
+    "@types/webextension-polyfill": "^0.12.1",
+    "sharp": "^0.34.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  }
+}

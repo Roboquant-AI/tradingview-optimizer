@@ -1,0 +1,156 @@
+{
+  "_version": "1.1.0",
+  "_lastUpdated": "2025-12-22",
+  "_notes": "DOM selectors for TradingView Pine Editor and Strategy Tester. Update when TV changes their DOM structure.",
+
+  "pineEditor": {
+    "tabButton": "[data-name='pine-editor']",
+    "tabButtonAlt": "[data-name='pine-dialog-button']",
+    "container": "[data-name='pine-dialog']",
+    "containerAlt": "#pine-editor-dialog",
+    "widget": ".tv-script-widget"
+  },
+
+  "monaco": {
+    "editor": ".monaco-editor.pine-editor-monaco",
+    "editorAlt": ".monaco-editor",
+    "textarea": ".monaco-editor textarea.inputarea",
+    "lines": ".view-lines",
+    "lineContent": ".view-line"
+  },
+
+  "toolbar": {
+    "compileButton": "[data-name='save']",
+    "compileButtonAlt": "button[aria-label*='Save']",
+    "addToChartButton": "[data-name='add-script-to-chart']",
+    "formatButton": "[data-name='format']"
+  },
+
+  "errors": {
+    "console": "[class*='consoleWrapper']",
+    "consoleAlt": ".messages-BYK0v0qq",
+    "messagesTable": "table[class*='messages']",
+    "errorRow": "tr[class*='error-']",
+    "warningRow": "tr[class*='warning-']",
+    "allRows": "tr[class*='selectable-']"
+  },
+
+  "status": {
+    "compilingIndicator": "[class*='compiling']",
+    "successIndicator": "[class*='success']",
+    "errorIndicator": "[class*='error']"
+  },
+
+  "auth": {
+    "userMenu": "[data-name='header-user-menu-button']",
+    "signInButton": "[data-name='header-sign-in-button']",
+    "userAvatar": ".tv-header__user-menu-button-avatar"
+  },
+
+  "chart": {
+    "container": ".chart-container",
+    "symbol": ".tv-symbol-header__first-line",
+    "symbolButton": "#header-toolbar-symbol-search",
+    "symbolValue": "#header-toolbar-symbol-search span[class*='value-']",
+    "timeframeButton": "#header-toolbar-intervals",
+    "timeframeValue": "#header-toolbar-intervals span[class*='value-']"
+  },
+
+  "strategyTester": {
+    "_comment": "Strategy Tester panel selectors",
+    "tabButton": "[data-name='backtesting']",
+    "tabButtonAlt": "[data-name='strategy-tester']",
+    "container": "[class*='backtesting']",
+    "containerAlt": "[data-name='backtesting-content']",
+    "reportContainer": "[class*='reportContainer']",
+    "loadingIndicator": "[class*='loading']",
+    "noDataMessage": "[class*='noData']",
+    "tabsContainer": "[class*='tabs']",
+    "updateReportButton": "[class*='updateButton']",
+    "updateReportButtonAlt": "button[class*='update']",
+    "updateReportButtonAlt2": "[data-name='update-report']"
+  },
+
+  "performanceSummary": {
+    "_comment": "Performance Summary tab selectors",
+    "tabButton": "[data-value='performance']",
+    "tabButtonAlt": "button[class*='tab']",
+    "overviewTab": "[data-value='overview']",
+    "container": "[class*='performance']",
+    "table": "[class*='reportTable']",
+    "tableAlt": "table[class*='report']",
+    "row": "tr",
+    "cell": "td",
+    "valueCell": "td:nth-child(2)",
+    "labelCell": "td:nth-child(1)"
+  },
+
+  "tradesList": {
+    "_comment": "List of Trades tab selectors",
+    "tabButton": "[data-value='list']",
+    "tabButtonAlt": "button[class*='tab']",
+    "container": "[class*='trades']",
+    "table": "[class*='table']",
+    "tableAlt": "table",
+    "headerRow": "thead tr",
+    "bodyRows": "tbody tr",
+    "scrollContainer": "[class*='scrollable']",
+    "scrollContainerAlt": "[class*='virtualList']"
+  },
+
+  "strategyHeader": {
+    "_comment": "Strategy header info selectors",
+    "container": "[class*='strategyGroup']",
+    "strategyName": "[class*='title']",
+    "strategyNameAlt": "[class*='strategyTitle']",
+    "symbolInfo": "[class*='symbolInfo']",
+    "symbolInfoAlt": "[class*='additionalSymbol']",
+    "dateRange": "[class*='dateRange']"
+  },
+
+  "dateRange": {
+    "_comment": "Date range picker selectors for walk-forward optimization",
+    "button": ".dateRangeMenuWrapper-rQLA_iPz button",
+    "buttonAlt": "[class*='dateRangeMenuWrapper'] button",
+    "customOption": "[aria-label='Custom date range…']",
+    "customOptionAlt": "[data-value='custom']",
+    "dateInput": "input.input-RUSovanF[data-qa-id='ui-lib-Input-input']",
+    "dateInputAlt": "input[data-qa-id='ui-lib-Input-input']",
+    "applyButton": "button[data-name='apply-button']",
+    "applyButtonAlt": "button[name='submit']",
+    "menuContainer": "[class*='menuWrap']",
+    "startDateInput": "[data-qa-id='ui-lib-Input-input']",
+    "endDateInput": "[data-qa-id='ui-lib-Input-input']"
+  },
+
+  "strategySettings": {
+    "_comment": "Strategy settings dialog selectors for optimization",
+    "settingsButton": "[data-qa-id='legend-settings-action']",
+    "settingsButtonAlt": "button[aria-label='Settings']",
+    "dialog": "[data-dialog-name*='indicator-properties']",
+    "dialogAlt": "[class*='dialog'][class*='content']",
+    "inputsTab": "button#Inputs",
+    "inputsTabAlt": "button[id='inputs']",
+    "propertiesTab": "button#Properties",
+    "scrollableContent": ".scrollable-vwgPOHG8",
+    "scrollableContentAlt": "[class*='scrollable']",
+    "contentContainer": ".content-RLntasnw",
+    "contentContainerAlt": "[class*='content-']",
+    "sectionHeader": "[data-section-name]",
+    "sectionTitle": ".title-FG0u1J5p",
+    "inputRow": ".cell-RLntasnw.first-RLntasnw",
+    "inputRowAlt": "[class*='cell-'][class*='first-']",
+    "inputLabel": ".inner-RLntasnw",
+    "inputLabelAlt": "[class*='inner-']",
+    "numericInput": "input.input-RUSovanF[inputmode='numeric']",
+    "numericInputAlt": "input[inputmode='numeric']",
+    "checkbox": "input.input-GZajBGIm[type='checkbox']",
+    "checkboxAlt": "input[type='checkbox']",
+    "checkboxLabel": ".label-Lah5SRBd",
+    "timeInput": "[data-qa-id='time-input-wrapper'] input",
+    "colorPicker": "[data-name='color-select']",
+    "okButton": "button[name='submit']",
+    "okButtonAlt": "[data-name='submit-button']",
+    "cancelButton": "button[name='cancel']"
+  }
+}

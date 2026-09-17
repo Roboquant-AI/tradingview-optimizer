@@ -1,0 +1,94 @@
+Free, open-source parameter optimizer for TradingView strategies. No account, no login, no paid tier.
+
+TradingView gives you Pine Script and a Strategy Tester. What it doesn't give you is a systematic way to find the best inputs for your strategy. This extension does.
+
+
+WHAT'S NEW IN 3.0.0
+
+- Everything is free: all modes, walk-forward analysis, heatmaps and the prop firm check, with no parameter limits
+- No account needed: sign-in is gone
+- Send to app is removed: results stay in your browser, and you can download them as JSON
+- Open source under the MIT license: github.com/Roboquant-AI/tradingview-optimizer
+
+
+WHAT IT DOES
+
+Select strategy inputs, set a range for each, and run a grid search. Every combination runs through TradingView's Strategy Tester on your chart, and metrics are calculated from the exported trade list.
+
+When the run finishes you get a sortable results table ranked by your goal. Click Apply on any row to set those values on your chart.
+
+
+HOW IT WORKS
+
+1. Open a TradingView chart with a Pine Script strategy applied
+2. Click Optimizer in the panel tab bar below the chart
+3. Your strategy inputs are detected automatically
+4. Select the inputs to optimize and set min / max / step
+5. Choose a goal: Sharpe ratio, net profit %, profit factor, win rate or minimum drawdown
+6. Click Start and follow the progress
+7. Sort the results and apply the parameter set you want
+
+
+OPTIMIZATION MODES
+
+Standard: grid search over the selected inputs on the current chart.
+
+Multi-Timeframe: test the same inputs across several timeframes in one run.
+
+Multi-Symbol: test the same inputs across several symbols without switching charts by hand.
+
+Full Grid: sweep every combination of inputs, symbols and timeframes together.
+
+
+WALK-FORWARD ANALYSIS
+
+Split history into an in-sample period, where inputs are optimized, and an out-of-sample period, where they are checked on unseen data.
+
+Single split: one in-sample and one out-of-sample window.
+
+Rolling: slide the windows across your date range in configurable steps (window sizes and step in months) to see whether the settings hold up over time.
+
+
+PARAMETER HEATMAPS
+
+2D heatmaps and 3D surface plots show how two inputs interact for a chosen metric. Broad stable regions are a better sign than isolated peaks.
+
+
+PROP FIRM CHALLENGE CHECK
+
+Checks the best result against a profit target, a daily loss limit and a maximum drawdown for a given account size.
+
+
+RESULTS AND HISTORY
+
+- Sortable table with net profit %, Sharpe ratio, profit factor, win rate, max drawdown and trade count
+- One-click Apply for any row
+- Download results as JSON
+- Your last 10 optimizations are saved locally in your browser
+
+
+PRIVACY
+
+- No account and no login
+- Your TradingView credentials are never accessed
+- Your strategy code and results are never sent to any server
+- The extension only runs on tradingview.com
+
+
+REQUIREMENTS
+
+- A TradingView account
+- A chart with a Pine Script strategy applied
+- Chrome
+
+
+ABOUT ROBOQUANT
+
+This extension is built by Roboquant. Roboquant 2.0 lets you build and backtest trading strategies on its native engine with CME market data, then optimize and deploy them. Learn more at roboquant.dev.
+
+
+DISCLAIMER
+
+Not affiliated with, endorsed by or sponsored by TradingView. The extension automates the TradingView web page; use it at your own risk and in line with TradingView's terms. Past performance does not guarantee future results.
+
+Source code and issues: github.com/Roboquant-AI/tradingview-optimizer
