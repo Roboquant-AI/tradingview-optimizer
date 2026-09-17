@@ -1,4 +1,8 @@
-# Strategy Optimizer for TradingView
+<p align="center">
+  <img src="assets/logo.svg" alt="Roboquant logo" width="96" height="91">
+</p>
+
+<h1 align="center">Strategy Optimizer for TradingView</h1>
 
 A free, open-source Chrome extension that optimizes the inputs of your TradingView Pine Script strategies. It runs every backtest through TradingView's own Strategy Tester, right on your chart.
 
