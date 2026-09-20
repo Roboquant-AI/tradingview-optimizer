@@ -35,7 +35,7 @@ If you installed an earlier version from the Chrome Web Store, it updates to 3.0
 
 ### Chrome Web Store
 
-Install **Strategy Optimizer for TradingView** from the Chrome Web Store.
+Install **[Strategy Optimizer for TradingView](https://chromewebstore.google.com/detail/strategy-optimizer-for-tr/knmhofaifgcakgjifhjalahmbfgokiep)** from the Chrome Web Store.
 
 ### From source
 
