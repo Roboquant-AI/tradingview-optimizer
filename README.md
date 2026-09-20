@@ -8,6 +8,8 @@ A free, open-source Chrome extension that optimizes the inputs of your TradingVi
 
 No account, no login, no paid tier. MIT licensed.
 
+<p align="center"><img src="assets/demo.gif" width="800" alt="Grid search running through TradingView's Strategy Tester, then the results table, prop-firm check and heatmap"></p>
+
 Built by [Roboquant](https://roboquant.dev/?utm_source=tradingview-optimizer&utm_medium=github&utm_content=readme-header).
 
 ## What's new in 3.0.0
