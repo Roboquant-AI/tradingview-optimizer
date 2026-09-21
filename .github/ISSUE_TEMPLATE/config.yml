@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/Roboquant-AI/tradingview-optimizer/blob/main/CONTRIBUTING.md
+    about: How to build the extension locally and open a pull request.

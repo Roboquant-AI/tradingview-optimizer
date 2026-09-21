@@ -1,0 +1,63 @@
+name: Bug report
+description: Something doesn't work, or the extension stopped working after a TradingView update.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. TradingView changes its interface from time to time, and most breakages are fixed by updating one selector in `src/selectors.json`, so the details below help a lot.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown on chrome://extensions under Strategy Optimizer for TradingView.
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version and OS
+      placeholder: "Chrome 140, macOS 15"
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: TradingView plan
+      options:
+        - Basic (free)
+        - Essential
+        - Plus
+        - Premium
+        - Ultimate
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a chart with the strategy "..."
+        2. Select inputs ... with ranges ...
+        3. Click Start Optimization
+        4. ...
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: Right-click the page, choose Inspect, open the Console tab and paste any red errors. Remove anything private first.
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: A screenshot of the extension panel and the Strategy Tester helps a lot.
